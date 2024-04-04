@@ -5,21 +5,93 @@
   --color-secondary-2: #D6D6D6;
   --color-secondary-3: #F9F9F9; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/gilroy/Gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroy/Gilroylight.woff") format("woff"), url("../fonts/gilroy/Gilroylight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/gilroy/Gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroy/Gilroyextrabold.woff") format("woff"), url("../fonts/gilroy/Gilroyextrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local("Noto Serif"), local("NotoSerif"), url("../fonts/notoserif/notoserif.woff2") format("woff2"), url("../fonts/notoserif/notoserif.woff") format("woff"), url("../fonts/notoserif/notoserif.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"), url("../fonts/notoserif/notoserifitalic.woff2") format("woff2"), url("../fonts/notoserif/notoserifitalic.woff") format("woff"), url("../fonts/notoserif/notoserifitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local("Noto Serif Bold"), local("NotoSerif-Bold"), url("../fonts/notoserif/notoserifbold.woff2") format("woff2"), url("../fonts/notoserif/notoserifbold.woff") format("woff"), url("../fonts/notoserif/notoserifbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Noto Serif';
+  src: local("Noto Serif Bold Italic"), local("NotoSerif-BoldItalic"), url("../fonts/notoserif/notoserifbolditalic.woff2") format("woff2"), url("../fonts/notoserif/notoserifbolditalic.woff") format("woff"), url("../fonts/notoserif/notoserifbolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
 body {
   font-family: 'Gilroy', 'Mulish', sans-serif; }
 
-@font-face {
-  body {
-    font-family: 'Gilroy';
-    src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/gilroy/Gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroy/Gilroylight.woff") format("woff"), url("../fonts/gilroy/Gilroylight.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal; } }
+.container {
+  display: grid;
+  grid-template-rows: 95vh repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(6, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
-@font-face {
-  body {
-    font-family: 'Gilroy';
-    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"), url("../fonts/gilroy/Gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroy/Gilroyextrabold.woff") format("woff"), url("../fonts/gilroy/Gilroyextrabold.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal; } }
-  body .paragraph {
-    font-size: 35px; }
+.header {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(var(--color-primary), 0.87), rgba(var(--color-secondary-2), 0.87)), url(../img/jew-1.jpg); }
+
+.products {
+  background-color: lightcoral;
+  grid-column: full-start/full-end;
+  grid-row: 2/3; }
+
+.salons {
+  background-color: olive;
+  grid-column: full-start/full-end;
+  grid-row: 3/4; }
+
+.articles {
+  background-color: navajowhite;
+  grid-column: full-start/full-end;
+  grid-row: 4/5; }
+
+.galery {
+  background-color: sandybrown;
+  grid-column: full-start/full-end;
+  grid-row: 5/6; }
+
+.subscribe {
+  background-color: hotpink;
+  grid-column: full-start/full-end;
+  grid-row: 6/7; }
+
+.footer {
+  background-color: darkcyan;
+  grid-column: full-start/full-end;
+  grid-row: 7/8; }

@@ -1,0 +1,14 @@
+.header {
+  //background-color: var(--color-primary);
+  --color-primary: #333333;
+  --color-secondary-2: #D6D6D6;
+
+
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(var(--color-primary), 0.8));
+  
+}
+
+
+//url(../img/jew-1.jpg)
+//background-image: linear-gradient(rgba(var(--color-primary), 0.87), rgba(var(--color-secondary-2), 0.87)), url(../img/jew-1.jpg);
