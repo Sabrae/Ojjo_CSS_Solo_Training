@@ -1,18 +1,55 @@
 .header {
-
   grid-column: full-start/full-end;
+
+  padding-top: 2.5rem;
+
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
 
   background-image: linear-gradient(rgba(var(--color-primary-rgb), 0.87), rgba(var(--color-primary-rgb), 0.87)), url(../img/jew-1.jpg);
   background-size: cover;
   background-position: center;
-  
 
-  &__icon {
-    background-color: #dda;
-    fill: #000;
-    height: 10rem;
-    width: 10rem;
+  &__menu {
+    grid-column: 2/4;
   }
+  
+  &__logo {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    width: 15rem;
+  }
+
+  &__btn {
+    grid-column: 4/6;
+    grid-row: 3/4;
+    width: 20rem;
+  }
+
+  &__trademarks {
+    grid-column: 2/8;
+    grid-row: 4/5;
+
+    display: grid;
+    grid-template-columns: subgrid;
+    justify-items: center;
+    align-items: center;
+
+    img {
+      max-height: 8rem;
+      max-width: 100%;
+    }
+  } 
+}
+
+.heading-1 {
+  grid-column: 3/7;
+  grid-row: 2/3;
+}
+
+.actions {
+  grid-column: 6/8;
 }
 
 

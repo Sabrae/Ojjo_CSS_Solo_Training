@@ -1,0 +1,27 @@
+.actions {
+  
+  &__icon {
+      fill: #fff;
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+}
+
+.search {
+
+  &__input {
+    width: 8rem;
+  }
+
+  &__button {
+    width: 6rem;
+    height: 2rem;
+  }
+
+  &__icon {
+    width: 6rem;
+    sheight: 2rem;
+  }
+}
+
+
