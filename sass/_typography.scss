@@ -3,9 +3,35 @@
 }
 
 .btn {
+  width: 26rem;  //An explicit indication of the width and height was required due to the characteristics of the font and the line container for this font in the inline block of the button.
+  height: 5.1rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 0;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  padding: 1.5rem 3.5rem;
+  cursor: pointer;
+  transition: all .2s;
 
+  &:hover {
+    background-color: var(--color-primary-light);
+  }
+
+  letter-spacing: 2.5px;
+  
 }
 
 .btn-black {
+  border: 1px solid #fff;
+  background-color:var(--color-primary);
 
+  &:hover {
+    color: var(--color-primary);
+    border: var(--color-primary);
+    background-color: var(--color-secondary-1);
+  }
 }
