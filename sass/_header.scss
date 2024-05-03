@@ -24,6 +24,8 @@
   &__btn {
     grid-column: 4/6;
     grid-row: 3/4;
+
+    place-self: center;
   }
 
   &__trademarks {

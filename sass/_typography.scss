@@ -3,12 +3,12 @@
 }
 
 .btn {
-  width: 26rem;  //An explicit indication of the width and height was required due to the characteristics of the font and the line container for this font in the inline block of the button.
-  height: 5.1rem;
   font-family: inherit;
   font-size: 1.6rem;
   text-transform: uppercase;
-  line-height: 0;
+  
+  line-height: 1.6rem;
+  letter-spacing: 2.5px;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -21,7 +21,7 @@
     background-color: var(--color-primary-light);
   }
 
-  letter-spacing: 2.5px;
+  
   
 }
 
