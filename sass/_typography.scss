@@ -3,25 +3,35 @@
 }
 
 .btn {
-  font-family: inherit;
-  font-size: 1.6rem;
-  text-transform: uppercase;
+  &,
+  &:link,
+  &:visited {
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    letter-spacing: 2.5px;
+    
+    min-width: 100px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 1.5rem 3.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
   
-  line-height: 1.6rem;
-  letter-spacing: 2.5px;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-  padding: 1.5rem 3.5rem;
-  cursor: pointer;
-  transition: all .2s;
-
   &:hover {
     background-color: var(--color-primary-light);
+    
   }
 
-  
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(2px);
+  }
   
 }
 
