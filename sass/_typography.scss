@@ -1,13 +1,20 @@
 .heading-1 {
-  font-size: 3.5rem;
+  font-size: 2.65rem;
+  font-family: var(--font-noto-serif);
+  color: #fff;
+
+  display: inline-block;
+  margin-bottom: 4.8rem;
+
 }
 
 .btn {
   &,
   &:link,
   &:visited {
+    
     font-family: inherit;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     line-height: 1.6rem;
     letter-spacing: 2.5px;
@@ -17,9 +24,10 @@
     border: 1px solid transparent;
     border-radius: 0;
     background-color: #fff;
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 2rem;
     cursor: pointer;
     transition: all 0.2s;
+    backface-visibility: hidden
   }
   
   &:hover {
@@ -27,10 +35,14 @@
     
   }
 
-  &:active,
+  &:active {
+    outline: none;
+    transform: translateY(3px);
+  }
+
   &:focus {
     outline: none;
-    transform: translateY(2px);
+    border: 2px solid #fff;
   }
   
 }

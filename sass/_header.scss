@@ -24,7 +24,6 @@
   &__btn {
     grid-column: 4/6;
     grid-row: 3/4;
-
     place-self: center;
   }
 
@@ -47,6 +46,7 @@
 .heading-1 {
   grid-column: 3/7;
   grid-row: 2/3;
+  place-self: center;
 }
 
 .actions {
