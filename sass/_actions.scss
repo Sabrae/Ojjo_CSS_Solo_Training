@@ -1,5 +1,11 @@
 .actions {
-  height: 10rem;
+  
+  display: flex;
+
+  align-content: top;
+  justify-content: space-around;
+
+  padding-top: 2rem;
   
   &__icon {
       fill: #fff;
@@ -11,7 +17,12 @@
 .search {
 
   &__input {
-    width: 8rem;
+    width: 6rem;
+    font-family: var(--font-gilroy);
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
   }
 
   &__button {

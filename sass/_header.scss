@@ -14,16 +14,18 @@
 
   &__menu {
     grid-column: 2/4;
+    padding-top: 2rem;
     
     display: flex;
     justify-content: start;
-    margin-right: auto;
+    column-gap: 4.8rem;
   }
   
   &__logo {
     grid-column: 4/6;
     grid-row: 1/2;
-    width: 15rem;
+    width: 23rem;
+    justify-self: center;
   }
 
   &__btn {
