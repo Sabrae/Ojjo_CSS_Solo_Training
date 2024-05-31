@@ -28,6 +28,11 @@
     background-color: transparent;
     border: none;
 
+
+    &:focus {
+      outline: 2px solid var(--color-secondary-3);
+    }
+
     &::-webkit-input-placeholder {
       font-weight: 400;
       color: #fff;
@@ -43,13 +48,15 @@
   &__button {
     width: 2rem;
     height: 2rem;
-
     border: none;
     background-color: transparent;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: var(--color-primary-light);
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-secondary-3);
     }
   }
 

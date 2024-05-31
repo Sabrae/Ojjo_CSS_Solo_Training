@@ -19,9 +19,12 @@
     margin-top: 3px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--color-primary-light);
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-secondary-3)
   }
 }
 
@@ -58,8 +61,7 @@
   }
 
   &:focus {
-    outline: none;
-    border: 2px solid #fff //добавить стили для режима высокой контрастности с помощью @media(forced-colors:active)
+    outline: 2px solid var(--color-secondary-3);
   }
 }
 
