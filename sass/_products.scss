@@ -6,16 +6,30 @@
   display: grid;
   grid-template-columns: subgrid;
   grid-template-rows: repeat(3, min-content) minmax(6rem, min-content);
-  gap: 5rem;
 
-  &__btn {
-    grid-row: 3/4;
+
+  &__nav {
+    list-style: none;
+
+  }
+
+  &__nav-item {}
+
+  &__nav-link {
+    text-decoration: none;
+  }
+
+  &__types {
+    //grid-column: 1/7;
+    grid-row: 4/5;
   }
 
   &__img {
     width: 100%;
   }
 }
+
+.product {}
 
 .heading-4 {
   grid-column: 1/-1;
