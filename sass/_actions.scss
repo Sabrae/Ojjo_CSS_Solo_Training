@@ -8,7 +8,7 @@
   height: 5rem;
 
   &__icon {
-    fill: #fff;
+    fill: var(--color-white);
     height: 1.5rem;
     width: 1.5rem;
     margin-top: 3px;
@@ -24,7 +24,7 @@
     width: 6rem;
     font-family: var(--font-gilroy);
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--color-white);
     background-color: transparent;
     border: none;
 
@@ -35,12 +35,12 @@
 
     &::-webkit-input-placeholder {
       font-weight: 400;
-      color: #fff;
+      color: var(--color-white);
     }
 
     &::-moz-placeholder {
       font-weight: 400;
-      color: #fff;
+      color: var(--color-white);
       opacity: 1; //FireFox добавляет опасити 0ю8 к плейсхолдерам
     }
   }
