@@ -1,5 +1,43 @@
 .salons {
-  background-color: olive;
+  background-color: black;
+  background-image: url(../img/background-pattern.jpg);
+  width: 100%;
   grid-column: full-start/full-end;
   grid-row: 3/4;
+
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 84rem) minmax(6rem, 1fr);
+  grid-template-rows: repeat(4 min-content);
+
+  &__heading-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  &__heading-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &__discribe {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+  }
+
+  &__link {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    place-self: center;
+
+
+    text-decoration: none;
+
+
+
+  }
+
+
 }
