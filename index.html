@@ -170,8 +170,38 @@
   </section>
 
   <div class="subscribe">
-    <h4 class="heading-4 heading__white">Полезные советы и персональные предложения</h4>
-    <h2 class="heading-2 heading__white">Эксклюзивная рассылка</h2>
+    <h4 class="heading-4 heading__white subscribe__heading-1">Полезные советы и персональные предложения</h4>
+    <h2 class="heading-2 heading__white subscribe__heading-2">Эксклюзивная рассылка</h2>
+    <div class="subscribe__container">
+
+      <ul class="subscribe__list">
+        <li><svg class="subscribe__icon">
+            <use xlink:href="img/sprite.svg#icon-subscribe__icon"></use>
+          </svg>
+          <a href="#" class="subscribe__link">Личный менеджер</a>
+        </li>
+        <li><svg class="subscribe__icon">
+            <use xlink:href="img/sprite.svg#icon-subscribe__icon"></use>
+          </svg>
+          <a href="#" class="subscribe__link">Доставка и оформление</a>
+        </li>
+        <li><svg class="subscribe__icon">
+            <use xlink:href="img/sprite.svg#icon-subscribe__icon"></use>
+          </svg>
+          <a href="#" class="subscribe__link">Индивидуальный дизайн</a>
+        </li>
+      </ul>
+
+      <div class="subscribe__form-border">
+        <form action="" method="get" class="subscribe__form">
+          <p>
+            <!-- <label for="email" class="subscribe__lable"></label> -->
+            <input type="email" name="email" id="email" placeholder="Ваш e-mail:" required class="subscribe__input">
+          </p>
+          <button class="btn btn-black" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
 
 
   </div>

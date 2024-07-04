@@ -85,3 +85,11 @@
 .heading__white {
   color: var(--color-white);
 }
+
+.subscribe__link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+  display: block;
+}

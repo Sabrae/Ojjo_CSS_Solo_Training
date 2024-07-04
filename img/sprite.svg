@@ -80,7 +80,7 @@
 </symbol>
 <symbol id="icon-subscribe__icon" viewBox="0 0 32 32">
 <path d="M20.706 16l-7.059 4.075v-8.151l7.059 4.075z"></path>
-<path fill="none" stroke="#000" style="stroke: var(--color2, #000)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M8.941 3.774l21.176 12.226-21.176 12.226v-24.453z"></path>
+<path fill="none" stroke="#000" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M8.941 3.774l21.176 12.226-21.176 12.226v-24.453z"></path>
 </symbol>
 <symbol id="icon-telegram" viewBox="0 0 32 32">
 <path d="M28.442 3.378l-27.017 10.418c-1.844 0.741-1.833 1.769-0.338 2.228l6.936 2.164 16.049-10.126c0.759-0.462 1.452-0.213 0.882 0.293l-13.003 11.736-0.478 7.15c0.701 0 1.010-0.322 1.403-0.701l3.369-3.276 7.008 5.176c1.292 0.712 2.22 0.346 2.542-1.196l4.6-21.681c0.471-1.888-0.721-2.743-1.954-2.185z"></path>
