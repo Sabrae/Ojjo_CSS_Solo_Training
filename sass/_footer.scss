@@ -2,5 +2,9 @@
   background-color: darkcyan;
   grid-column: full-start/full-end;
   grid-row: 7/8;
-  margin-top: 40rem;
+
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(4, min-content) minmax(6rem, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  ;
 }
