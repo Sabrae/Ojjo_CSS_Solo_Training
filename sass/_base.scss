@@ -48,6 +48,13 @@
 
    @font-face {
      font-family: 'Gilroy';
+     src: local('gilroy-medium'), ('../fonts/gilroy/gilroy-medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+   }
+
+   @font-face {
+     font-family: 'Gilroy';
      src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/gilroy/Gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroy/Gilroyextrabold.woff') format('woff'), url('../fonts/gilroy/Gilroyextrabold.ttf') format('truetype');
      font-weight: 800;
      font-style: normal;
