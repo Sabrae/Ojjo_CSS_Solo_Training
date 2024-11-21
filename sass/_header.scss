@@ -1,7 +1,7 @@
 .header {
   grid-column: full-start/full-end;
 
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
 
   display: grid;
   grid-template-columns: subgrid;
@@ -35,6 +35,11 @@
     place-self: center;
   }
 
+  &__link {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
   &__trademarks {
     grid-column: full-start/full-end;
     grid-row: 4/5;
@@ -57,6 +62,20 @@
       margin: 1.5rem 0;
     }
   }
+
+  &__secondary {
+    grid-column: full-start/full-end;
+
+    padding-top: 1.5rem;
+
+
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: min-content;
+    row-gap: 4rem;
+    background-color: var(--color-primary);
+  }
+
 }
 
 .heading-1 {
