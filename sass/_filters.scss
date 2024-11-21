@@ -1,0 +1,31 @@
+// ; 1. сбросить дефолты селекта
+// ; 2. сделать размеры и стили селекта, стили типографики для селекта
+// ; 2.1. сделать размеры оборачивающего дива соответствующими размеру селекта
+// ; 3. задать размеры, стили и спозиционировать иконку
+// ; 4. размножить селекты
+// ; 5. флексом или гридом расположить элементы горизонтально
+
+.filters {
+  grid-column: center-start/center-end;
+  margin-top: 6rem;
+
+  &__triangle {}
+
+  &__select {
+    appearance: none;
+    border: none;
+    background-color: red;
+    outline: none;
+
+    font-family: var(--font-gilroy);
+    font-size: 1.6rem;
+
+    padding: 0 60px 10px 0;
+
+  }
+
+  &__icon {
+    height: 10px;
+    width: 10px;
+  }
+}
