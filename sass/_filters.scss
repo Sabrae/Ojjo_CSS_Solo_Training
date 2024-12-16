@@ -8,24 +8,37 @@
 .filters {
   grid-column: center-start/center-end;
   margin-top: 6rem;
+  margin-bottom: 6rem;
 
-  &__triangle {}
+  display: flex;
+
+  &__triangle {
+    position: relative;
+
+    margin: auto;
+  }
 
   &__select {
     appearance: none;
     border: none;
-    background-color: red;
+    border-bottom: 1px solid var(--color-secondary-2);
+    background-color: transparent;
     outline: none;
 
     font-family: var(--font-gilroy);
     font-size: 1.6rem;
+    color: var(--color-primary);
 
-    padding: 0 60px 10px 0;
+    padding: 10px 60px 10px 0;
 
   }
 
   &__icon {
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
+
+    position: absolute;
+    transform: translate(-100%, 100%);
+
   }
 }
